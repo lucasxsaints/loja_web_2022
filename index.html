@@ -6,68 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LojaWEB onde vende tudo</title>
    
+    <link rel="stylesheet" href="/css/root.css">
     <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
 </head>
-<body>
-    <main> 
 
-    <header> 
-     
-        <div class="logo">
-            <img src="./img/logo.png" alt="logomarca amazon" 
-            height="50">
-            </div>
-        <div class="localizacao">
+        <body class="black">
+            <main>
+                <header class="row">
+                    <div class="logo col-2">
+                        <img src="./img/logo.png" alt="logomarca Amazon" height="50">
+                    </div>
+                    <div class="localizacao col-2">
+                        <div>
+                            <img src="img/map-svgrepo-com.svg" alt="">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <!-- <img src="./img/map-svgrepo-com.svg" alt=""> -->
+                        </div>
+                        <div>
+                            <span>Olá</span>
+                            <span>Selecione o endereço</span>
+                        </div>
+                    </div>
+                    <div class="pesquisa col-4">
+                        <form action="" class="formPesquisa">
+                            <label for="selectTipo"></label>
+                            <select name="tipoProduto" id="selectTipo" title="Tipo do produto">
+                                <option value="0" selected>
+                                    Todos
+                                </option>
+                                <option value="1">
+                                    Eletrônicos
+                                </option>
+                                <option value="2">
+                                    Casa
+                                </option>
+                            </select>
+        
+                            <label for="nomeProduto"></label>
+                            <input type="text" name="nomeProduto" id="nomeProduto" title="Nome do Produto"
+                                placeholder="Nome do produto">
+        
+                            <!-- <label for=""></label> -->
+                            <!-- <input type="submit" value=""> -->
+                            <button type="submit" title="Fazer Pesquisa">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="login col-2">
+                        <span>
+                            Olá, faça seu login
+                        </span>
+                        <span>
+                            Contas e Listas
+                        </span>
+                    </div>
+                    <div class="pedidos col-1">
+                        <span>Devoluções</span>
+                        <span>e Pedidos</span>
+                    </div>
+                    <div class="carrinho col-1">
+                        <span>0</span>
+                        <span>CAR</span>
+                    </div>
+                 </header>
+                 
+                <nav>
+
+                  <ul>
+                      <li>
+                      
+                  
+                  <button title="menu">
+                    <i class="fa fa-solid fa bars"> </i>
+                    <span> Todos </span>
+                        <a href=""></a>
+                        </button>
+                    </li>
+                  <li>
+                    <a href="" >
+                        Vendas na Amazon
+                         </a>
+
+                    <a href="" >
+                   Mais vendidos
+                    </a>
+                    <a href="" >
+                        Prime
+                        <i class="fa fa-solid fa-caret-down" ></i>
+                         </a>
+                  </li>
+                
+                 </ul> 
+
+                </nav>
+                
+                 <section> </section>
+
+                    <section class="slider carrossel">
+                        <div class="slide bgcarrossel1">
             
-        <div></div>
-        <span>Olá</span>
-        <span> Selecione o seu endereço </span>
+                        </div>
+                        <div class="slide bgcarrossel2">
+            
+                        </div>
+                        <div class="slide bgcarrossel3">
+            
+                        </div>
+                        <div class="slide bgcarrossel4">
+            
+                        </div>
+                        <button class="btn btn-esquerdo"> < </button>
+                        <button class="btn btn-direito"> > </button>
+                    </section>
+                    <section class="produtos">
+                        <div>
+                            <p>Ipsum Lorem</p>
+                            <img src="img/download (1).jpg" alt=" TV 4o Polegadas">
+                        </div>
+                        <div>
+                            <p>Ipsum Lorem</p>
+                            <img src="./img/download (2).jpg" alt="Barra de Chocolate">
+                        </div>
+                        <div>
+                            <p>Ipsum Lorem</p>
+                            <img src="./img/download (3).jpg" alt="iPhone">
+                        </div>
+                        <div>
+                            <p>Ipsum Lorem</p>
+                            <img src="./img/download (4).jpg" alt=" Maquina de Lavar">
+                        </div>
+                    </section>
 
-        </div>
-        <div class="pesquisa black bg-grey">
-            <form action=""class= "formpesquisa">
-            <label for="SelectTipo"></label>
-         <select name="tipoproduto "id="SelectTipo" title="TipoProduto">
-         <option value="0" selected> Todos os produtos </option>
-         <option value=""> Eletrônicos </option>
-         <option value=""> Casa </option>
 
-        </select>
-        </form>
-        </div>
-        <label for=""></label>
-        <input type="text" name=" nomedoproduto" id="nomedoproduto" title="nomedoproduto"
-        placeholder="Nome do produto">
 
-        <label for=""></label>
-        <input type="submit">
-        <button type="submit" title="Pesquisa">?</button>
 
+
+                       
+                       
+            
+            </main>
+        </body>
         
-        <div class="login">
-        <span> Olá, faça seu login  
-        </span>
-        
-        <span>Contas e Listas 
-        </span>
-
-
-
-
-        </div>
-
-        <div class="pedidos">
-      <span>0</span>
-      <span>CAR</span>
-
-        </div>
-
-    </header>
-    <nav>
-    </nav>
-    </main>
-    
-</body>
-</html>
+        </html>
